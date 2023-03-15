@@ -3,15 +3,15 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import DrawerScreen from './components/Drawer/DrawerScreen';
-
-
-
+import {NavigationContainer} from '@react-navigation/native';
+import Tab1 from './components/HideTab/Tab1';
 const App = () => {
   return (
-    <View style={styles.container}>
-    <DrawerScreen/>
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Tab1 />
+      </View>
+    </NavigationContainer>
   );
 };
 

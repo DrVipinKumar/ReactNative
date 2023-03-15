@@ -1,14 +1,11 @@
-import {Button, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
 const Register = props => {
-  const {navigation} = props;
+  const {route} = props;
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>
-        Register in Tab Naviation in React Native CLI
-      </Text>
-      <Button title="Go Home" onPress={() => navigation.navigate('Welcome')} />
+      <Text style={styles.text}>Screen 2: {route.params?.title}</Text>
     </View>
   );
 };
@@ -21,7 +18,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  heading: {
+  text: {
     fontSize: 30,
+    fontWeight: 'bold',
   },
 });

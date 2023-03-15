@@ -2,21 +2,21 @@ import {StyleSheet, Text, View, Button} from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 
-const Screen2 = () => {
+const Profiles = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Screen Two</Text>
+      <Text style={styles.heading}>Profiles Screen</Text>
       <Button
-        title="Go to Home"
+        title="Go to HomeNav"
         color="brown"
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => navigation.navigate('HomeNav')}
       />
     </View>
   );
 };
 
-export default Screen2;
+export default Profiles;
 
 const styles = StyleSheet.create({
   container: {

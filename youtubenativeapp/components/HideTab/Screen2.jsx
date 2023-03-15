@@ -1,16 +1,14 @@
 import {StyleSheet, Text, View, Button} from 'react-native';
 import React from 'react';
-import {useNavigation} from '@react-navigation/native';
 
-const Screen2 = () => {
-  const navigation = useNavigation();
+const Screen2 = props => {
+  const {route, navigation} = props;
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Screen Two</Text>
+      <Text style={styles.text}>Screen 2: {route.params?.title}</Text>
       <Button
-        title="Go to Home"
-        color="brown"
-        onPress={() => navigation.navigate('Home')}
+        title="Go to Profiles"
+        onPress={() => navigation.navigate('Profiles')}
       />
     </View>
   );
@@ -24,9 +22,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  heading: {
+  text: {
     fontSize: 30,
     fontWeight: 'bold',
-    color: 'brown',
   },
 });

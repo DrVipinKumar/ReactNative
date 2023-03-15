@@ -1,9 +1,10 @@
 apply plugin: "com.android.application"
-
+apply plugin: "com.facebook.react"
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
 
 /**
+ apply plugin: "com.facebook.react"
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
  * and bundleReleaseJsAndAssets).
  * These basically call `react-native bundle` with the correct arguments during the Android build
@@ -79,7 +80,7 @@ import org.apache.tools.ant.taskdefs.condition.Os
  */
 
 project.ext.react = [
-    enableHermes: true,  // clean and rebuild if changing
+    enableHermes: false,  // clean and rebuild if changing
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -254,7 +255,7 @@ dependencies {
 
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
-
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
