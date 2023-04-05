@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "703903927707",
+    "project_id": "firbasereactnative",
+    "storage_bucket": "firbasereactnative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703903927707:android:ad741c6c3db6cb21b1653e",
+        "android_client_info": {
+          "package_name": "com.reactnativefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703903927707-26kvt2a629vfilnm4d8lgbe9blp81l4s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reactnativefirebase",
+            "certificate_hash": "088788dd0ecdba3cbf0b35f7c2e8228c5ca96b09"
+          }
+        },
+        {
+          "client_id": "703903927707-9f9jq7iv7kfvb23d4rmh52s9ofqr4gb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpSAiyywhZ1Cr8qNL2U1wXb-XifcQzkYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703903927707-8m1st59jcu8mmklvhbljc5d8bnda7h8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
