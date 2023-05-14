@@ -21,5 +21,10 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
-    </application>
+      </application>
+      <queries>
+   <intent>
+     <action android:name="com.google.android.youtube.api.service.START" />
+   </intent>
+</queries>
 </manifest>

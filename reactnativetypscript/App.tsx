@@ -1,15 +1,15 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {StyleSheet} from 'react-native';
-import StackNav from './components/youtube/AXIOS/StackNav';
+import {StyleSheet, SafeAreaView} from 'react-native';
+import YouTubeScreens from './components/youtube/YouTube/YouTubeScreens';
 
 function App(): JSX.Element {
   return (
     // <SafeAreaView style={styles.container}>
-    //   <CURD />
+    //   <Playlists />
     // </SafeAreaView>
     <NavigationContainer>
-      <StackNav />
+      <YouTubeScreens />
     </NavigationContainer>
   );
 }
